@@ -117,6 +117,12 @@ From [dbo].[OYEMADE LITACSV]
 Where Product NOT IN (Select Product from [dbo].[OYEMADE LITACSV]);
 ```
 
+### Results
+- The products with the highest and least sales are the Shoes and Socks respectively.
+  ```
+  ![TOTAL SALES BY PRODUCT(1)](https://github.com/user-attachments/assets/ce718da3-2cdd-4492-a83d-6b61e06b6b76)
+
+
 
 
   
