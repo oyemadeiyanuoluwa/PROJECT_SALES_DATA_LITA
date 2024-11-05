@@ -46,7 +46,8 @@ This repository contains an Excel-based data analysis project focused on the und
   ```
 
   ### Data Sources
-  The Primary Datasets used for this analysis is the "Sales_Data.csv" file,containing detailed information about each sales made by the retail store.
+  The Primary Datasets used for this analysis is the https://drive.google.com/file/d/1Kg08Ogdvc05chhLHBC2EXTlpeqZzqUsu/view?usp=drive_link file,containing detailed information about 
+ each sales made by the retail store.
 
   ### Tools Used
   -Microsoft Excel- This was used for Data Cleaning and also Data Visulization
