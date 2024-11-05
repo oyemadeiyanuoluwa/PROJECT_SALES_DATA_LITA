@@ -3,7 +3,7 @@
 
 This repository contains an Excel-based data analysis project focused on the understanding sales trends and patterns within a retail store dataset. The projects provides insights through data cleaning, visualization, dashboard creation. The Dataset is made up of 9 columns and 9922 rows. The columns include: 
 
-- OrderID: This is a unique identifier assigned to a customer's prder transaction.
+- OrderID: This is a unique identifier assigned to a customer's order transaction.
 
 - CustomerID: This is a unique identifiier assigned to a customer, used to track and manage customer interactions,transactions, and relationships.
 
@@ -118,9 +118,43 @@ Where Product NOT IN (Select Product from [dbo].[OYEMADE LITACSV]);
 ```
 
 ### Results
-- The products with the highest and least sales are the Shoes and Socks respectively.
-  ```
+- The shoes are the top-selling product, while socks have the lowest sales.
+  
   ![TOTAL SALES BY PRODUCT(1)](https://github.com/user-attachments/assets/ce718da3-2cdd-4492-a83d-6b61e06b6b76)
+
+-The East region has the highest sales, while the West region has the lowest, with only a slight difference between them.
+
+  ![TOTAL SALES BY REGION(2)](https://github.com/user-attachments/assets/2c472dc3-4a9e-4b20-9698-8906c66914c8)
+
+  - When comparing the months, the highest sales in 2023 occurred in February, while the lowest were recorded in August. In 2024, the highest sales so far happened in July, based on the most recent data update in August.
+
+- Looking at both years, 2024 has demonstrated stronger sales performance than 2023.
+
+![months and year](https://github.com/user-attachments/assets/2b3ec3a2-e0be-4d85-b802-b746d317b94b)
+
+![months and year 002](https://github.com/user-attachments/assets/7eacd163-541d-4bb8-a3d2-29ce90c75f2f)
+
+![months and year 003](https://github.com/user-attachments/assets/e7e17bdc-0214-4359-b656-ad74b23719fa)
+
+### Recommendations
+
+- Use shoes as a gateway product to attract more customers and create brand loyalty.
+- Offer discounts or bundle socks with shoes to encourage purchases.
+- Try to replicate East region marketing tactics in other regions, especially the West.
+- Focus on maximizing sales in high-performing months like February and July, and plan targeted campaigns for low-performing months like 
+  August.
+- Implement seasonal promotions around key sales periods.
+- Focus on customer and retention with loyalty programs and personalized offers to sustain momentum.
+
+### Limitations
+-
+
+
+
+
+
+
+
 
 
 
