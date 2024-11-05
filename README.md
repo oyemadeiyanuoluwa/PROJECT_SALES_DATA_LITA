@@ -53,11 +53,70 @@ EDA involved the sales data to answer key questions, such as:
 - What is the Total Sales for each product.
 - What is the Total number of Sales in each Region.
 - What is the Highest Product by Total Sales Value.
-- What is the Total Revenue by Product.
 - What is the Total monthly sales for the current year.
 - What are the top 5 customers by total purchase amount.
 - What is the percentage of total sales contributed by each region.
 - What are the products with no sales in the last quarter.
+
+### Data Analysis
+
+Uses SQL Server for the Data Analysis and the code used to answer the Key questions above include the following:
+
+```SQL
+Select * from  [dbo].[OYEMADE LITACSV]
+-TOTAL SALES FOR EACH PRODUCT
+ Select sum(TOTAL_SALES) AS Totalsalesbyproduct, Product
+from [dbo].[OYEMADE LITACSV]
+Group By Product
+```
+
+-TOTAL NUMBER OF SALES IN EACH REGION
+```Sql
+select Region, Count(*) as NumberOfSales
+from [dbo].[OYEMADE LITACSV]
+group by Region
+order by Region
+```
+-HIGHEST PRODUCT BY TOTAL SALES VALUE
+```
+Select Max(TOTAL_SALES) as HighestSellingProduct, Product
+from [dbo].[OYEMADE LITACSV]
+Group By Product 
+Order By HighestSellingProduct DESC
+```
+-TOTAL MONTHLY SALES FOR THE CURRENT YEAR
+```
+Select
+year (OrderDate)  as Year,
+month (OrderDate) as Month,
+sum (TOTAL_SALES) as TotalSales 
+from [dbo].[OYEMADE LITACSV]
+where Year(OrderDate)=2024
+Group By
+year (OrderDate),
+month (OrderDate)
+Order by
+year (OrderDate),
+month (OrderDate)
+```
+-TOP 5 CUSTOMERS BY TOTAL PURCHASE AMOUNT
+```
+Select Top 5
+Customer_Id,
+Sum(TOTAL_SALES) as TotalAmount
+From [dbo].[OYEMADE LITACSV]
+Group By 
+Customer_Id
+Order By 
+TotalAmount DESC
+```
+-Product with no Sales
+```
+Select Product, Customer_Id
+From [dbo].[OYEMADE LITACSV]
+Where Product NOT IN (Select Product from [dbo].[OYEMADE LITACSV]);
+```
+
 
 
   
