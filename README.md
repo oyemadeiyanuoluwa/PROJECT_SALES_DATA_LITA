@@ -77,7 +77,7 @@ EDA involved the sales data to answer key questions, such as:
 
 ### Data Analysis
 
-Uses SQL Server for the Data Analysis and the code used to answer the Key questions above include the following:
+Used SQL Server for the Data Analysis and the code used to answer the Key questions above include the following:
 
 ```SQL
 Select * from  [dbo].[OYEMADE LITACSV]
