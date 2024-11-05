@@ -1,4 +1,20 @@
 # SALES PERFOMANCE ANALYSIS PROJECT
+## Table Of Contents
+[Introduction](#introduction)
+
+[Data Sources](#data-sources)
+
+[Tools](#tools-used)
+
+[Exploratory Data Analysis](#exploratory-data-analysis)
+
+[Results](#results)
+
+[Recommendations](#recommendations)
+
+[Limitations](#limitations)
+
+[Conclusions](#conclusions)
 ### INTRODUCTION
 
 This repository contains an Excel-based data analysis project focused on the understanding sales trends and patterns within a retail store dataset. The projects provides insights through data cleaning, visualization, dashboard creation. The Dataset is made up of 9 columns and 9922 rows. The columns include: 
@@ -147,7 +163,12 @@ Where Product NOT IN (Select Product from [dbo].[OYEMADE LITACSV]);
 - Focus on customer and retention with loyalty programs and personalized offers to sustain momentum.
 
 ### Limitations
--
+Sales data for the past two years were incomplete, as the data for 2024 only covers up to August, making a full-year comparison between 
+ 2023 and 2024 challenging.
+ 
+ ### Conclusions
+ There is a strong likelihood that 2024 sales will surpass those of 2023 by the end of the year, as the total sales for 2023 reached 
+ 1,105,330 by December, while 2024's sales stand at 995,760, with only a 108,750 difference.
 
 
 
